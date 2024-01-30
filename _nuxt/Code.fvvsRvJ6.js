@@ -1,0 +1,2 @@
+import{l,b as s,c as t,G as o,f as n,j as r,n as c}from"./entry.iEDC7M-L.js";const p={},u={key:0},_={key:1};function d(e,a){return s(),t("div",null,[e.$slots.title?(s(),t("h3",u,[o(e.$slots,"title")])):n("",!0),e.$slots.text?(s(),t("p",_,[o(e.$slots,"text",{unwrap:"p"})])):n("",!0)])}const $=l(p,[["render",d]]),i={__name:"Code",props:["language"],setup(e){return(a,m)=>(s(),t("pre",{class:c([e.language])},[r("        "),o(a.$slots,"default",{unwrap:"p"}),r(`
+    `)],2))}},h=i;export{$ as B,h as a};
