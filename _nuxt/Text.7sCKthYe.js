@@ -1,0 +1,1 @@
+import{l as n,b as t,c as s,G as o,f as r}from"./entry.RY0TfA_E.js";const l={},c={key:0},a={key:1};function d(e,i){return t(),s("div",null,[e.$slots.title?(t(),s("h3",c,[o(e.$slots,"title")])):r("",!0),e.$slots.text?(t(),s("p",a,[o(e.$slots,"text",{unwrap:"p"})])):r("",!0)])}const f=n(l,[["render",d]]);export{f as default};
