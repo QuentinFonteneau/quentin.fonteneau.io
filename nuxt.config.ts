@@ -24,5 +24,11 @@ export default defineNuxtConfig({
   app: {
     rootTag: "body",
   },
+  content: {
+    markdown: {
+      remarkPlugins: [],
+      rehypePlugins: [],
+    },
+  },
   compatibilityDate: "2024-09-19",
 });
