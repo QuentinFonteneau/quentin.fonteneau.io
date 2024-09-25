@@ -1,0 +1,84 @@
+main section.about {
+  flex-direction: row;
+  gap: 5rem;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    h1 {
+      position: relative;
+      width: fit-content;
+    }
+
+    h1::after {
+      display: block;
+      content: "";
+      background: url(/img/highlight-05.svg);
+      background-size: cover;
+      width: 1.8255rem;
+      height: 2rem;
+      position: absolute;
+      right: -1.5rem;
+      top: -1.5rem;
+      transform: scaleX(-1) rotate(-3deg);
+
+      @media screen and (max-width: 768px) {
+        width: 1.36913rem;
+        height: 1.5rem;
+        right: -1.5rem;
+        top: -1.2rem;
+      }
+    }
+  }
+
+  .about__image {
+    position: relative;
+    width: 125%;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: flex-end;
+      width: fit-content;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $primary-orange;
+      border-radius: 1.5rem;
+      z-index: 0;
+
+      @media screen and (max-width: 768px) {
+        width: calc(100% - 1.5rem);
+      }
+    }
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative;
+      border-radius: 1.5rem;
+      aspect-ratio: 6/5;
+      z-index: 1;
+
+      @media screen and (max-width: 768px) {
+        width: calc(100% - 1.5rem);
+        aspect-ratio: 16/18.75;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+main.home section div.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.5rem;
+
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+  }
+
+  & h1 {
+    @include typo-subtitle;
+  }
+
+  & .subtitle {
+    @include typo-h2;
+  }
+}

@@ -1,0 +1,26 @@
+.filters {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $secondary-lighten-50;
+
+    span {
+        color: $primary-light-blue;
+    }
+
+    select {
+        display: flex;
+        height: 3.6875rem;
+        padding: 1rem 1.5rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; 
+    
+        border-radius: 0.5rem;
+        border: 2px solid $secondary-lighten-50;
+        background: $primary-white;
+    }
+}
