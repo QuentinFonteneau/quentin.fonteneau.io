@@ -21,11 +21,11 @@
         proposer des <span class="highlight">solutions adaptées</span> à votre
         projet.
       </p>
-      <a
+      <NuxtLink
         class="btn"
-        href="#"
-        >En savoir plus</a
-      >
+        href="/a-propos">
+        En savoir plus
+      </NuxtLink>
     </div>
   </section>
 </template>

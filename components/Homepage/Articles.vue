@@ -22,11 +22,11 @@
       </div>
     </div>
     <div class="card-cta">
-      <a
+      <NuxtLink
         class="btn"
-        href="#"
-        >Consulter mes articles</a
-      >
+        href="/articles">
+        Consulter mes articles
+      </NuxtLink>
     </div>
   </section>
 </template>
