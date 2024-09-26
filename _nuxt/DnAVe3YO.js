@@ -1,0 +1,1 @@
+import{m as a,f as r,g as s,a1 as l,n}from"./BRlTSGO1.js";const o={__name:"Alerteeeee",props:{type:{type:String,default:"info"}},setup(e){return(t,c)=>(r(),s("div",{class:n(["alert",`alert-${e.type}`])},[l(t.$slots,"default",{},void 0,!0)],2))}},d=a(o,[["__scopeId","data-v-1cd2494e"]]);export{d as default};

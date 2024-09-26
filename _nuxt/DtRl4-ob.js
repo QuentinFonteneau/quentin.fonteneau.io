@@ -1,0 +1,1 @@
+import{_ as r,a}from"./ZRuGtulX.js";import{m as s,g as _,k as e,h as c,F as m,f as p}from"./BRlTSGO1.js";import"./BoDocjuh.js";const f={};function l(u,o){const n=r,t=a;return p(),_(m,null,[e(n),o[0]||(o[0]=c("main",null,"A propos",-1)),e(t)],64)}const k=s(f,[["render",l]]);export{k as default};
