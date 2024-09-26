@@ -30,8 +30,5 @@ export default defineNuxtConfig({
       rehypePlugins: [],
     },
   },
-  studio: {
-    enabled: true,
-  },
   compatibilityDate: "2024-09-19",
 });
