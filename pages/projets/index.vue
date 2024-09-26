@@ -49,16 +49,19 @@
 <script setup>
 const projectType = ref("all");
 
-const { data: projets, refresh } = await useAsyncData("projets", () => {
-  const query = queryContent("projets");
-  if (projectType.value !== "all") {
-    // Applique le filtre seulement si ce n'est pas "all"
-    query.where(
-      projectType.value !== "all" ? { project_type: projectType.value } : {}
-    );
+const { data: projets, refresh } = await useAsyncData(
+  `projets-${projectType.value}`,
+  () => {
+    const query = queryContent("projets");
+    if (projectType.value !== "all") {
+      // Applique le filtre seulement si ce n'est pas "all"
+      query.where(
+        projectType.value !== "all" ? { project_type: projectType.value } : {}
+      );
+    }
+    return query.find();
   }
-  return query.find();
-});
+);
 
 watchEffect(() => {
   console.log("projectType changed:", projectType.value);
