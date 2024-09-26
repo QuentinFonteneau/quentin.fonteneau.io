@@ -64,4 +64,10 @@ const filteredArticles = computed(() => {
     (article) => article.article_type === articleType.value
   );
 });
+
+definePageMeta({
+  documentDriven: {
+    page: false, // Keep page fetching enabled
+  },
+});
 </script>

@@ -61,4 +61,10 @@ const filteredProjects = computed(() => {
     (projet) => projet.project_type === projectType.value
   );
 });
+
+definePageMeta({
+  documentDriven: {
+    page: false, // Keep page fetching enabled
+  },
+});
 </script>
