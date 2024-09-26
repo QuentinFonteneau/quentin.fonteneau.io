@@ -60,6 +60,9 @@ const { data: projets, refresh } = await useAsyncData(
       );
     }
     return query.find();
+  },
+  {
+    defaultCache: false,
   }
 );
 
