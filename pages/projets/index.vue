@@ -61,6 +61,7 @@ const { data: projets, refresh } = await useAsyncData("projets", () => {
 });
 
 watchEffect(() => {
+  console.log("projectType changed:", projectType.value);
   refresh(); // Rafraîchir la requête dès que la catégorie change
 });
 
