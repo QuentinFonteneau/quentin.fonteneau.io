@@ -30,7 +30,7 @@
       </div>
       <div class="articles-list">
         <div
-          v-for="article in articles"
+          v-for="article in filteredArticles"
           :key="article._path">
           <NuxtLink
             :to="article._path"
@@ -52,24 +52,16 @@
 <script setup>
 const articleType = ref("all");
 
-const { data: articles, refresh } = await useAsyncData("articles", () => {
-  const query = queryContent("articles");
-  if (articleType.value !== "all") {
-    // Applique le filtre seulement si ce n'est pas "all"
-    query.where(
-      articleType.value !== "all" ? { article_type: articleType.value } : {}
-    );
+const { data: allArticles } = await useAsyncData("all-articles", () =>
+  queryContent("articles").find()
+);
+
+const filteredArticles = computed(() => {
+  if (articleType.value === "all") {
+    return allArticles.value;
   }
-  return query.find();
-});
-
-watchEffect(() => {
-  refresh(); // Rafraîchir la requête dès que la catégorie change
-});
-
-definePageMeta({
-  documentDriven: {
-    page: false, // Keep page fetching enabled
-  },
+  return allArticles.value.filter(
+    (article) => article.article_type === articleType.value
+  );
 });
 </script>

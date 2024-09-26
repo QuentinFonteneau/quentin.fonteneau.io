@@ -27,7 +27,7 @@
       </div>
       <div class="projects-list">
         <div
-          v-for="projet in projets"
+          v-for="projet in filteredProjects"
           :key="projet._path">
           <NuxtLink
             :to="projet._path"
@@ -49,31 +49,16 @@
 <script setup>
 const projectType = ref("all");
 
-const { data: projets, refresh } = await useAsyncData(
-  `projets-${projectType.value}`,
-  () => {
-    const query = queryContent("projets");
-    if (projectType.value !== "all") {
-      // Applique le filtre seulement si ce n'est pas "all"
-      query.where(
-        projectType.value !== "all" ? { project_type: projectType.value } : {}
-      );
-    }
-    return query.find();
-  },
-  {
-    defaultCache: false,
-  }
+const { data: allProjects } = await useAsyncData("all-projects", () =>
+  queryContent("projets").find()
 );
 
-watchEffect(() => {
-  console.log("projectType changed:", projectType.value);
-  refresh(); // Rafraîchir la requête dès que la catégorie change
-});
-
-definePageMeta({
-  documentDriven: {
-    page: false, // Keep page fetching enabled
-  },
+const filteredProjects = computed(() => {
+  if (projectType.value === "all") {
+    return allProjects.value;
+  }
+  return allProjects.value.filter(
+    (projet) => projet.project_type === projectType.value
+  );
 });
 </script>
