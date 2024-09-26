@@ -29,6 +29,7 @@ export default defineNuxtConfig({
       remarkPlugins: [],
       rehypePlugins: [],
     },
+    documentDriven: true,
   },
   compatibilityDate: "2024-09-19",
 });
