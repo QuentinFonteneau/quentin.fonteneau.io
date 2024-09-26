@@ -1,5 +1,4 @@
 <template>
-  <Header />
   <main class="home">
     <HomepagePresentation />
     <HomepageProjets />
@@ -9,5 +8,4 @@
     <HomepageApropos />
     <HomepageReseau />
   </main>
-  <Footer />
 </template>

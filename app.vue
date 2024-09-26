@@ -1,7 +1,5 @@
 <template>
-  <NuxtPage />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
-
-<style lang="scss">
-@import "/assets/sass/style.scss";
-</style>
