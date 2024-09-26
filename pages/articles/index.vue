@@ -66,4 +66,10 @@ const { data: articles, refresh } = await useAsyncData("articles", () => {
 watchEffect(() => {
   refresh(); // Rafraîchir la requête dès que la catégorie change
 });
+
+definePageMeta({
+  documentDriven: {
+    page: false, // Keep page fetching enabled
+  },
+});
 </script>
