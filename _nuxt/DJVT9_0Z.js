@@ -1,0 +1,1 @@
+import{m as s,f as o,g as t,h as r,P as d,F as n}from"./jO9tQh1K.js";const l={},c={class:"p-2 border bg-white dark:bg-black dark:border-gray-700 rounded"};function f(a,e){return o(),t(n,null,[e[0]||(e[0]=r("h1",null,"Card 1",-1)),r("div",c,[d(a.$slots,"default")])],64)}const _=s(l,[["render",f]]);export{_ as default};
