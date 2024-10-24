@@ -1,0 +1,3 @@
+<template>
+  ProjectSteps
+</template>
