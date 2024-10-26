@@ -4,7 +4,7 @@ img: "image.webp"
 project_type: "Freelance" # Freelange, En agence, Projet perso
 project_skills: ["Skill 1", "Skill 2", "Skill 3"]
 project_url: "https://example.org"
-draft: true
+draft: false
 ---
 
 ::project-header
@@ -16,9 +16,5 @@ urna. Praesent eu vehicula dolor, vel maximus erat. Nulla facilisi. Aliquam
 tempus, eros ac rhoncus gravida, metus eros euismod sem, id fringilla felis orci
 id nisl. Ut rhoncus arcu tincidunt, luctus libero in, placerat turpis. Cras
 pulvinar risus dolor, a porttitor leo suscipit id.
-
-::
-
-::text
 
 ::
