@@ -1,0 +1,133 @@
+.content__image {
+  img {
+    border-radius: 1rem;
+  }
+
+  legend {
+    @include typo-small-body;
+  }
+}
+
+.content__text {
+  align-items: center;
+
+  & div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h3 {
+      color: $primary-dark-blue;
+      @include typo-h4;
+    }
+  }
+}
+
+.content__steps {
+  align-items: center;
+  padding: 10rem 12rem;
+  width: 100%;
+
+  .steps {
+    width: 100%;
+  }
+
+  h3 {
+    padding-bottom: 2rem;
+    @include typo-h3;
+  }
+
+  .step-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 4rem 11rem;
+
+    .step-item {
+      &__title {
+        @include typo-h4;
+
+        &::before {
+          content: url(/img/asterisk.svg);
+          width: 0.89981rem;
+          height: 0.84981rem;
+          transform: rotate(-24.795deg);
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.content__blockquote {
+  align-items: center;
+  padding: 10rem 12rem;
+
+  blockquote {
+    margin: 0;
+    @include typo-h2;
+
+    p {
+      position: relative;
+      &::before {
+        content: open-quote;
+        margin-right: 0.5rem;
+      }
+
+      &::after {
+        content: close-quote;
+        margin-left: 0.5rem;
+      }
+    }
+
+    span {
+      @include typo-menu;
+
+      & {
+        color: $primary-dark-blue;
+      }
+
+      cite {
+        margin-left: 2rem;
+        font-style: normal;
+        color: $primary-light-blue;
+      }
+    }
+  }
+}
+
+.content__other {
+  padding-bottom: 5rem;
+}
+
+.content__title {
+  @include typo-h3;
+}
+
+.content__code pre {
+  @include typo-small-body;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 500;
+
+  & code {
+    counter-reset: step;
+    counter-increment: step 0;
+  }
+
+  & code .line {
+    &:last-child {
+      display: none;
+    }
+
+    &::before {
+      content: counter(step);
+      counter-increment: step;
+      width: 2rem;
+      margin-right: 1.5rem;
+      display: inline-block;
+      text-align: right;
+      color: rgba(115, 138, 148, 0.4);
+    }
+  }
+}

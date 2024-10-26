@@ -1,0 +1,54 @@
+main.project article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    section {
+        display: flex;
+        padding: 0rem 5rem;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    & .article__header-presentation {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        width: 100%;
+
+        & .article__header-metadata {
+            width: 22.5%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        & .article__header-description {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
+
+    .subtitle {
+        @include typo-h2;
+    }
+
+    .content__image img {
+        padding: 10rem 0;
+    }
+
+    .content__steps,
+    .content__blockquote,
+    .content__text {
+        padding: 10rem 12rem;
+    }
+
+    .content__text div h3 {
+        @include typo-h3;
+    }
+}

@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+
+  .link {
+    text-decoration: underline 2px transparent;
+    transition: text-decoration 0.2s linear;
+    text-underline-offset: 0.5rem;
+
+    @include typo-h4;
+  }
+
+  & img {
+    display: inline-block;
+    transition: border-radius 0.2s linear;
+    border-radius: 1rem;
+    aspect-ratio: 23/20;
+    object-fit: cover;
+    height: auto;
+  }
+
+  &:hover {
+    .link {
+      transition: text-decoration 0.2s linear;
+      text-decoration-color: $primary-light-blue;
+    }
+
+    img {
+      transition: border-radius 0.2s linear;
+      border-radius: 2.5rem;
+    }
+  }
+
+  & .tag {
+    justify-content: end;
+
+    span {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+}
