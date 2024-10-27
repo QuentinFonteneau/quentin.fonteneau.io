@@ -1,19 +1,19 @@
 <template>
   <section class="content__image">
     <img
-      :src="$slots.src"
-      :alt="$slots.alt" />
-    <legend v-if="$slots.legend"><slot name="legend" /></legend>
+      :src="src"
+      :alt="alt" />
+    <legend v-if="legend">{{ legend }}</legend>
   </section>
 </template>
+<script setup lang="ts">
+import { defineProps } from "vue";
 
-<script setup>
-import { computed } from "vue";
+interface BlockImageProps {
+  src: string;
+  alt: string;
+  legend: string;
+}
 
-console.info("test");
-console.info("test");
-// console.info($slots.src()[0]?.children);
-// // Récupère le contenu des slots "src" et "alt" s'ils sont fournis
-// const imgSrc = computed(() => ($slots.src ? $slots.src()[0]?.children : ""));
-// const imgAlt = computed(() => ($slots.alt ? $slots.alt()[0]?.children : ""));
+const props = defineProps<BlockImageProps>();
 </script>

@@ -38,7 +38,6 @@
 </template>
 <script setup>
 import { useRoute } from "vue-router";
-
 const route = useRoute();
 const post = await queryContent().where({ _path: route.fullPath }).findOne();
 

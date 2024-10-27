@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/content", "@nuxthq/studio", "@nuxt/image"],
+  modules: ["@nuxt/content", "@nuxthq/studio", "@nuxt/image", "nuxt-shiki"],
 
   routeRules: {
     "/": { prerender: true },
@@ -25,10 +25,14 @@ export default defineNuxtConfig({
     rootTag: "body",
   },
   content: {
+    documentDriven: true,
     markdown: {
-      remarkPlugins: [],
+      remarkPlugins: ["remark-reading-time"],
       rehypePlugins: [],
     },
+  },
+  shiki: {
+    defaultTheme: "one-dark-pro",
   },
   compatibilityDate: "2024-09-19",
 });

@@ -106,9 +106,11 @@
 
 .content__code pre {
   @include typo-small-body;
+  line-height: 1.5rem;
   border-radius: 1rem;
   padding: 1rem;
   font-weight: 500;
+  background-color: #282c34;
 
   & code {
     counter-reset: step;

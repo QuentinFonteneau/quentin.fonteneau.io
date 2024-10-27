@@ -1,3 +1,3 @@
 <template>
-  <section class="content__title">{props.children}</section>
+  <section class="content__title"><slot /></section>
 </template>

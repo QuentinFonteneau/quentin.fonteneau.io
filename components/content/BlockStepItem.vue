@@ -1,10 +1,17 @@
 <template>
   <div class="step-item">
     <div class="step-item__title">
-      <ContentSlot
-        :use="$slots.title"
-        unwrap="p" />
+      {{ title }}
     </div>
-    <div class="step-item__text"><slot name="text" /></div>
+    <div class="step-item__text"><slot /></div>
   </div>
 </template>
+<script setup lang="ts">
+import { defineProps } from "vue";
+
+interface BlockStepItemProps {
+  title: string;
+}
+
+const props = defineProps<BlockStepItemProps>();
+</script>
