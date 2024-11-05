@@ -1,11 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import wasm from "vite-plugin-wasm";
-import topLevelAwait from "vite-plugin-top-level-await";
+import wasm from "@rollup/plugin-wasm";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/content", "@nuxthq/studio", "@nuxt/image", "nuxt-shiki"],
-
   routeRules: {
     "/": { prerender: true },
   },
@@ -23,14 +21,10 @@ export default defineNuxtConfig({
         },
       },
     },
-    plugins: [wasm(), topLevelAwait()],
-    esbuild: {
-      target: "esnext", // Pour s'assurer que esbuild supporte top-level await
-    },
+    plugins: [wasm()],
     build: {
-      target: "esnext",
       rollupOptions: {
-        external: ["env", "wasi_snapshot_preview1"],
+        external: ["shiki/dist/onig.wasm"], // Externaliser le fichier .wasm
       },
     },
   },
@@ -43,9 +37,13 @@ export default defineNuxtConfig({
       remarkPlugins: ["remark-reading-time"],
       rehypePlugins: [],
     },
+    highlight: {
+      theme: "nord",
+      preload: ["javascript", "php", "vue"],
+    },
   },
   shiki: {
-    defaultTheme: "one-dark-pro",
+    /* shiki options */
   },
   compatibilityDate: "2024-09-19",
 });

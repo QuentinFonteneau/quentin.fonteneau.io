@@ -38,6 +38,25 @@ lorem lacinia imperdiet.
 ::
 
 
+::block-code
+---
+lang: typescript
+code: |
+  export default function Text(props: any) {
+      return (
+          <>
+              <section class="content__text">
+                  <div>
+                      { props.title && <h3>{props.title}</h3>}
+                      {props.children}
+                  </div>
+              </section>
+          </>
+      );
+  }
+---
+::
+
 ::block-text
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget nunc
 dictum, efficitur augue eu, consequat felis. Pellentesque consectetur erat a

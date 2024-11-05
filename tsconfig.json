@@ -6,7 +6,7 @@
     "moduleResolution": "node",
     "target": "esnext",
     "lib": ["dom", "esnext"],
-    "types": ["vue", "node", "shiki"],
+    "types": ["vue", "node"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
