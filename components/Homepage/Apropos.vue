@@ -2,7 +2,7 @@
   <section class="about">
     <div class="about__image shadow-top-left">
       <img
-        src="/img/quentin_02.webp"
+        src="/img/build/quentin_02.webp"
         loading="lazy" />
     </div>
     <div class="about__text">

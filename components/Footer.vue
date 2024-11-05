@@ -1,10 +1,13 @@
 <template>
   <footer>
     <div class="footer__first">
-      <Logo />
+      <img
+        src="/img/build/logo.svg"
+        alt=""
+        class="logo" />
       <img
         loading="lazy"
-        src="/img/linkedin.svg"
+        src="/img/build/linkedin.svg"
         class="linkedin" />
     </div>
     <div class="footer__second">

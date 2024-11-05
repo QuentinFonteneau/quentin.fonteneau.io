@@ -1,9 +1,11 @@
 <template>
   <header>
     <div class="header">
-      <!-- Logo avec lien vers la page d'accueil -->
       <NuxtLink to="/">
-        <Logo />
+        <img
+          src="/img/build/logo.svg"
+          alt=""
+          class="logo" />
       </NuxtLink>
 
       <!-- Menu pour les écrans de bureau -->
@@ -28,13 +30,13 @@
         <img
           v-if="!isMenuOpen"
           class="menu-icon__open active"
-          src="/img/menu_open.svg"
+          src="/img/build/menu_open.svg"
           @click="toggleMenu" />
         <!-- Icône pour fermer le menu -->
         <img
           v-if="isMenuOpen"
           class="menu-icon__close active"
-          src="/img/menu_close.svg"
+          src="/img/build/menu_close.svg"
           @click="toggleMenu" />
         <!-- Navigation pour le menu mobile -->
         <nav :class="{ 'is-open': isMenuOpen }">

@@ -7,7 +7,7 @@
     <div class="card-list">
       <div class="card">
         <img
-          src="/img/tzatziki.webp"
+          src="/img/build/tzatziki.webp"
           loading="lazy" />
         <div class="tag">
           <span>Branding UX/UI</span>
@@ -16,7 +16,7 @@
       </div>
       <div class="card">
         <img
-          src="/img/jeanfrancois_biguet.webp"
+          src="/img/build/jeanfrancois_biguet.webp"
           loading="lazy" />
         <div class="tag">
           <span>Illustrateur</span>
@@ -25,7 +25,7 @@
       </div>
       <div class="card">
         <img
-          src="/img/lucas_debiais.webp"
+          src="/img/build/lucas_debiais.webp"
           loading="lazy" />
         <div class="tag">
           <span>Développeur front</span>

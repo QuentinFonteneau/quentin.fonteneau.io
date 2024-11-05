@@ -22,7 +22,7 @@
     </div>
     <div class="presentation__image shadow-bottom-right">
       <img
-        src="/img/quentin_01_02.webp"
+        src="/img/build/quentin_01.webp"
         loading="eager"
         height="840"
         width="730"

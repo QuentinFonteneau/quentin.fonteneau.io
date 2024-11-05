@@ -40,7 +40,7 @@ main.article article {
   .metadata__date,
   .metadata__reading-time {
     &::before {
-      content: url(/img/writed_by.svg);
+      content: url(/img/build/writed_by.svg);
       width: 1.1rem;
       height: 1.1rem;
       margin-right: 0.5rem;
@@ -49,13 +49,13 @@ main.article article {
 
   .metadata__date {
     &::before {
-      content: url(/img/calendar.svg);
+      content: url(/img/build/calendar.svg);
     }
   }
 
   .metadata__reading-time {
     &::before {
-      content: url(/img/clock.svg);
+      content: url(/img/build/clock.svg);
     }
   }
 
