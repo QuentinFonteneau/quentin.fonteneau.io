@@ -1,9 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import wasm from "@rollup/plugin-wasm";
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/content", "@nuxthq/studio", "@nuxt/image", "nuxt-shiki"],
+  modules: ["@nuxt/content", "@nuxthq/studio", "@nuxt/image"],
   routeRules: {
     "/": { prerender: true },
   },
@@ -21,12 +19,6 @@ export default defineNuxtConfig({
         },
       },
     },
-    plugins: [wasm()],
-    build: {
-      rollupOptions: {
-        external: ["shiki/dist/onig.wasm"], // Externaliser le fichier .wasm
-      },
-    },
   },
   app: {
     rootTag: "body",
@@ -38,12 +30,9 @@ export default defineNuxtConfig({
       rehypePlugins: [],
     },
     highlight: {
-      theme: "nord",
+      theme: "one-dark-pro",
       preload: ["javascript", "php", "vue"],
     },
-  },
-  shiki: {
-    /* shiki options */
   },
   compatibilityDate: "2024-09-19",
 });

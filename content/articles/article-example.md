@@ -39,9 +39,7 @@ lorem lacinia imperdiet.
 
 
 ::block-code
----
-lang: typescript
-code: |
+```typescript 
   export default function Text(props: any) {
       return (
           <>
@@ -54,7 +52,7 @@ code: |
           </>
       );
   }
----
+```
 ::
 
 ::block-text
