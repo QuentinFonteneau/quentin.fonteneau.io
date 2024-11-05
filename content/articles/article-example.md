@@ -4,6 +4,7 @@ img: "snippet.webp"
 article_type: "snippet"
 tags: ["Drupal"]
 created_at: 2024-10-24
+draft: false
 ---
 
 
