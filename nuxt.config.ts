@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import wasm from "vite-plugin-wasm";
+import topLevelAwait from "vite-plugin-top-level-await";
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/content", "@nuxthq/studio", "@nuxt/image", "nuxt-shiki"],
@@ -18,6 +21,16 @@ export default defineNuxtConfig({
         scss: {
           api: "modern-compiler",
         },
+      },
+    },
+    plugins: [wasm(), topLevelAwait()],
+    esbuild: {
+      target: "esnext", // Pour s'assurer que esbuild supporte top-level await
+    },
+    build: {
+      target: "esnext",
+      rollupOptions: {
+        external: ["env", "wasi_snapshot_preview1"],
       },
     },
   },
