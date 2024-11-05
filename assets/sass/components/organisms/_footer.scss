@@ -83,16 +83,12 @@ svg.logo {
     a {
       @include typo-link;
     }
-
-    li {
-      @include typo-link;
-      text-decoration: none;
-    }
   }
 
   .copyright {
-    font-size: 1rem;
-    margin-top: 1rem;
+    @include typo-link;
+    text-decoration: none;
+    margin: 1.15rem;
     text-align: center;
   }
 }

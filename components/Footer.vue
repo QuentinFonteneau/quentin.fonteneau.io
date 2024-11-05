@@ -9,11 +9,11 @@
     </div>
     <div class="footer__second">
       <ul>
-        <li class="menu"><a href="">Mentions légales</a></li>
-        <li class="menu"><a href="">Plan du site</a></li>
-        <li class="menu"><a href="">Gestion des cookies</a></li>
+        <li><a href="">Mentions légales</a></li>
+        <li><a href="">Plan du site</a></li>
+        <li><a href="">Gestion des cookies</a></li>
       </ul>
-      <div class="copyright">© Quentin Fonteneau - 2024</div>
+      <span class="copyright">© Quentin Fonteneau - 2024</span>
     </div>
   </footer>
 </template>
