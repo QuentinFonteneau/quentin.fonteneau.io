@@ -20,7 +20,8 @@
               Type d'article
             </option>
             <option value="all">Tout</option>
-            <option value="snippet">Snippet</option>
+            <option value="Article">Article</option>
+            <option value="Snippet">Snippet</option>
           </select>
           <!-- <input
             type="text"

@@ -35,7 +35,7 @@
 const { data: projets, refresh } = await useAsyncData("projets", () => {
   const query = queryContent("projets");
   query.limit(3);
-  query.sort();
+  query.sort({ created_at: -1 });
   return query.find();
 });
 </script>

@@ -35,7 +35,7 @@
 const { data: articles, refresh } = await useAsyncData("articles", () => {
   const query = queryContent("articles");
   query.limit(3);
-  query.sort();
+  query.sort({ created_at: -1 });
   return query.find();
 });
 </script>

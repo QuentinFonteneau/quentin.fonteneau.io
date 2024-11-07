@@ -118,7 +118,7 @@
   }
 
   & code .line {
-    &:last-child {
+    &:last-child:empty {
       display: none;
     }
 
