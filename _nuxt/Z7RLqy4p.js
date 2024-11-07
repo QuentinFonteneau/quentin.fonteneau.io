@@ -1,0 +1,1 @@
+import{a,f as s,g as t,h as o,t as n,j as r}from"./CCaENwkF.js";const c={class:"content__image"},l=["src","alt"],_={key:0},p=a({__name:"BlockImage",props:{src:{},alt:{},legend:{}},setup(d){return(e,i)=>(s(),t("section",c,[o("img",{src:e.src,alt:e.alt},null,8,l),e.legend?(s(),t("legend",_,n(e.legend),1)):r("",!0)]))}});export{p as default};
