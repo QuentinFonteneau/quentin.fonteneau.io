@@ -11,9 +11,8 @@
         <NuxtLink
           :to="article._path"
           class="card">
-          <img
-            :src="'/img/' + article.img"
-            loading="lazy" />
+          <NuxtImg
+            :src="'/img/articles/thumbnail/' + article.img + '_520x390.webp'" />
           <div class="tag">
             <span>{{ article.article_type }}</span>
           </div>

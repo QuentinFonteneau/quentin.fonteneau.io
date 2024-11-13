@@ -14,12 +14,19 @@
     @include typo-h4;
   }
 
-  & img {
-    display: inline-block;
+  & picture {
+    display: block; // Assurez que le conteneur <picture> prend toute la largeur
+    width: 100%; // Ajoute une largeur pour que le conteneur <picture> soit responsive
+  }
+
+  & picture img,
+  img {
+    display: block; // Utilisez "block" pour que l'image prenne toute la largeur de <picture>
     transition: border-radius 0.2s linear;
     border-radius: 1rem;
-    aspect-ratio: 23/20;
+    aspect-ratio: 4/3;
     object-fit: cover;
+    width: 100%; // Assurez que l'image est responsive
     height: auto;
   }
 
@@ -29,7 +36,7 @@
       text-decoration-color: $primary-light-blue;
     }
 
-    img {
+    picture img {
       transition: border-radius 0.2s linear;
       border-radius: 2.5rem;
     }

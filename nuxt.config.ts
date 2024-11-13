@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
+  target: "static",
   modules: ["@nuxt/content", "@nuxthq/studio", "@nuxt/image"],
   routeRules: {
     "/": { prerender: true },
@@ -23,7 +24,15 @@ export default defineNuxtConfig({
   },
   app: {
     rootTag: "body",
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+      htmlAttrs: {
+        lang: "fr",
+      },
+    },
   },
+
   content: {
     documentDriven: true,
     markdown: {

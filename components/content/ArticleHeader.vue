@@ -33,7 +33,7 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 const post = await queryContent(route.fullPath).findOne();
 const readingTime = post.readingTime.minutes < 1 ? 1 : post.readingTime.minutes;
-const img_header = "/img/" + post.img;
+const img_header = "/img/articles/header/" + post.img + "_1600x400.webp";
 
 function formatDate(dateString) {
   const date = new Date(dateString);

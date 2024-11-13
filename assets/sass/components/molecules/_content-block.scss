@@ -1,4 +1,6 @@
 .content__image {
+  gap: 2rem;
+
   img {
     border-radius: 1rem;
   }
@@ -29,6 +31,10 @@
   padding: 10rem 12rem;
   width: 100%;
 
+  @media screen and (max-width: 768px) {
+    padding: 0rem 2.5rem;
+  }
+
   .steps {
     width: 100%;
   }
@@ -42,6 +48,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 4rem 11rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    }
 
     .step-item {
       &__title {
@@ -111,6 +121,7 @@
   padding: 1rem;
   font-weight: 500;
   background-color: #282c34;
+  overflow-x: scroll;
 
   & code {
     counter-reset: step;

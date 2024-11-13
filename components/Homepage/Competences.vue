@@ -10,6 +10,7 @@
         <li>Architecture logicielle</li>
         <li>Maintenance applicative</li>
         <li>DevOps</li>
+        <li>Automatisation de processus</li>
         <li>Drupal</li>
         <li>Symfony</li>
         <li>Wordpress</li>

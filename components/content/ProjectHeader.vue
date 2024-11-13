@@ -6,7 +6,29 @@
         <li>{{ post.title ?? "" }}</li>
       </ul>
       <div class="article_header_image shadow-top-left">
-        <img :src="img_header" />
+        <picture>
+          <!-- Image large pour les grands écrans -->
+          <source
+            :srcset="'/img/projects/header/' + post.img + '_1600x400.webp'"
+            media="(min-width: 1200px)"
+            type="image/png" />
+
+          <!-- Image moyenne pour les écrans de taille moyenne -->
+          <source
+            :srcset="'/img/projects/header/' + post.img + '_1600x400.webp'"
+            media="(min-width: 768px)"
+            type="image/png" />
+
+          <!-- Image petite pour les petits écrans -->
+          <source
+            :srcset="'/img/projects/header/' + post.img + '_1600x400.webp'"
+            media="(max-width: 767px)"
+            type="image/png" />
+
+          <img
+            src=""
+            loading="lazy" />
+        </picture>
       </div>
     </div>
 
@@ -27,6 +49,7 @@
         <h1 class="subtitle">{{ post.title ?? "" }}</h1>
         <slot />
         <a
+          v-if="post.project_url"
           class="btn"
           :href="post.project_url"
           target="_blank">
@@ -40,6 +63,4 @@
 import { useRoute } from "vue-router";
 const route = useRoute();
 const post = await queryContent().where({ _path: route.fullPath }).findOne();
-
-const img_header = "/img/" + post.img;
 </script>

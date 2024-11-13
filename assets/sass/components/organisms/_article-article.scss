@@ -11,10 +11,22 @@ main.article article {
     justify-content: center;
     gap: 4rem;
     width: 100%;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 7rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 2rem;
+    }
   }
 
   & .article__header {
     padding: 0rem 5rem;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 2rem;
+    }
   }
 
   & .article__header-presentation {
@@ -22,13 +34,27 @@ main.article article {
     flex-direction: column;
     gap: 3rem;
     width: 100%;
-    padding: 0 15rem;
+    padding: 0 5rem;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 2rem;
+      padding: 0;
+    }
 
     & .article__header-metadata {
       display: flex;
       flex-direction: row;
       gap: 2.5rem;
       width: 100%;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
 
     .subtitle {

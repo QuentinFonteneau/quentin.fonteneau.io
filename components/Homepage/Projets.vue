@@ -11,9 +11,8 @@
         <NuxtLink
           :to="projet._path"
           class="card">
-          <img
-            :src="'/img/' + projet.img"
-            loading="lazy" />
+          <NuxtImg
+            :src="'/img/projects/thumbnail/' + projet.img + '_520x390.webp'" />
           <div class="tag">
             <span>En agence</span>
           </div>

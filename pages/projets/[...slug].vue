@@ -1,7 +1,5 @@
 <template>
   <main class="project">
-    <article>
-      <ContentDoc />
-    </article>
+    <ContentDoc tag="article" />
   </main>
 </template>

@@ -32,11 +32,38 @@
           <NuxtLink
             :to="projet._path"
             class="card">
-            <img
-              :src="'/img/' + projet.img"
-              loading="lazy" />
+            <picture>
+              <!-- Image large pour les grands écrans -->
+              <source
+                :srcset="
+                  '/img/projects/thumbnail/' + projet.img + '_520x390.webp'
+                "
+                media="(min-width: 1200px)"
+                type="image/webp" />
+
+              <!-- Image moyenne pour les écrans de taille moyenne -->
+              <source
+                :srcset="
+                  '/img/projects/thumbnail/' + projet.img + '_520x390.webp'
+                "
+                media="(min-width: 768px)"
+                type="image/png" />
+
+              <!-- Image petite pour les petits écrans -->
+              <source
+                :srcset="
+                  '/img/projects/thumbnail/' + projet.img + '_520x390.webp'
+                "
+                media="(max-width: 767px)"
+                type="image/png" />
+
+              <img
+                src=""
+                loading="lazy" />
+            </picture>
+
             <div class="tag">
-              <span>En agence</span>
+              <span>{{ projet.project_type }}</span>
             </div>
             <span class="link">{{ projet.title }}</span>
           </NuxtLink>

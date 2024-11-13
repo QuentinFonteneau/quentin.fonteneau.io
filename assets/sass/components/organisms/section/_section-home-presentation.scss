@@ -5,9 +5,9 @@ main section.presentation {
   justify-content: space-between;
 
   @media screen and (max-width: 768px) {
-    padding-top: 6.5rem;
     flex-direction: column-reverse;
     gap: 4rem;
+    margin-top: 1rem;
   }
 
   .presentation__text {
@@ -80,12 +80,12 @@ main section.presentation {
       height: auto;
       position: relative;
       border-radius: 1.5rem;
-      aspect-ratio: 39/34;
+      aspect-ratio: 4/3;
       object-fit: cover;
+      object-position: top;
       z-index: 1;
 
       @media screen and (max-width: 768px) {
-        aspect-ratio: 8/9;
         width: calc(100% - 1.5rem);
       }
     }
