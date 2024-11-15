@@ -1,3 +1,5 @@
+@use "../../../settings/colors";
+
 main section.about {
   flex-direction: row;
   gap: 5rem;
@@ -56,7 +58,7 @@ main section.about {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: $primary-orange;
+      background: colors.$primary-orange;
       border-radius: 1.5rem;
       z-index: 0;
 

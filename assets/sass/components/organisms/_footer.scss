@@ -1,7 +1,10 @@
+@use "../../settings/colors";
+@use "../../settings/mixins";
+
 footer {
   max-width: 100%;
   width: 100%;
-  border-top: 1px solid $primary-light-blue;
+  border-top: 1px solid colors.$primary-light-blue;
 }
 
 .footer {
@@ -80,12 +83,12 @@ img.logo {
     }
 
     a {
-      @include typo-link;
+      @include mixins.typo-link;
     }
   }
 
   .copyright {
-    @include typo-link;
+    @include mixins.typo-link;
     text-decoration: none;
     margin: 1.15rem;
     text-align: center;

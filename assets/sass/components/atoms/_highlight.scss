@@ -1,5 +1,7 @@
+@use "../../settings/colors";
+
 .highlight,
 strong {
-  color: $primary-light-blue;
+  color: colors.$primary-light-blue;
   font-weight: 700;
 }

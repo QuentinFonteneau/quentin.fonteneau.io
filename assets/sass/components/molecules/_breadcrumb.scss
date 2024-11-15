@@ -1,3 +1,5 @@
+@use "../../settings/mixins";
+
 .breadcrumb {
   display: flex;
   gap: 0.2rem;
@@ -5,7 +7,7 @@
   padding-bottom: 2.75rem;
 
   a {
-    @include typo-link;
+    @include mixins.typo-link;
     text-decoration: none;
 
     &::after {
@@ -15,7 +17,7 @@
   }
 
   li {
-    @include typo-link;
+    @include mixins.typo-link;
     text-decoration: none;
 
     &:last-child {

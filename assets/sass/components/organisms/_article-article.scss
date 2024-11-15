@@ -1,3 +1,5 @@
+@use "../../settings/mixins";
+
 main.article article {
   display: flex;
   flex-direction: column;
@@ -58,7 +60,7 @@ main.article article {
     }
 
     .subtitle {
-      @include typo-h2;
+      @include mixins.typo-h2;
     }
   }
 
@@ -105,7 +107,7 @@ main.article article {
     padding: 5rem;
 
     .subtitle {
-      @include typo-h3;
+      @include mixins.typo-h3;
     }
   }
 

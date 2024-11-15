@@ -1,3 +1,5 @@
+@use "../settings/mixins";
+
 main.home section div.header {
   display: flex;
   flex-direction: column;
@@ -9,10 +11,10 @@ main.home section div.header {
   }
 
   & h1 {
-    @include typo-subtitle;
+    @include mixins.typo-subtitle;
   }
 
   & .subtitle {
-    @include typo-h2;
+    @include mixins.typo-h2;
   }
 }

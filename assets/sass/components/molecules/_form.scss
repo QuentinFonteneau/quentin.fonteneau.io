@@ -1,3 +1,5 @@
+@use "../../settings/colors";
+
 .filters {
 
     display: flex;
@@ -5,10 +7,10 @@
     gap: 1rem;
 
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid $secondary-lighten-50;
+    border-bottom: 1px solid colors.$secondary-lighten-50;
 
     span {
-        color: $primary-light-blue;
+        color: colors.$primary-light-blue;
     }
 
     select {
@@ -20,7 +22,7 @@
         gap: 1rem; 
     
         border-radius: 0.5rem;
-        border: 2px solid $secondary-lighten-50;
-        background: $primary-white;
+        border: 2px solid colors.$secondary-lighten-50;
+        background: colors.$primary-white;
     }
 }

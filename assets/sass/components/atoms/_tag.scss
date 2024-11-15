@@ -1,3 +1,6 @@
+@use "../../settings/colors";
+@use "../../settings/mixins";
+
 .tag {
   width: 100%;
   display: flex;
@@ -11,11 +14,11 @@
     padding: 0.5rem 1rem;
 
     border-radius: 1rem;
-    border: 1px solid $secondary-lighten-25;
-    background: $primary-white;
+    border: 1px solid colors.$secondary-lighten-25;
+    background: colors.$primary-white;
 
-    @include typo-small-body;
-    color: $primary-light-blue;
+    @include mixins.typo-small-body;
+    color: colors.$primary-light-blue;
 
     & ::first-letter {
       text-transform: uppercase;

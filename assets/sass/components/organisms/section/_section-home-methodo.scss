@@ -1,3 +1,5 @@
+@use "../../../settings/colors";
+
 main section.methodo .methodo-list {
   display: flex;
   justify-content: space-around; /* Pour espacer les éléments uniformément */
@@ -12,8 +14,8 @@ main section.methodo .methodo-list {
 
 .methodo-item {
   border-radius: 1rem;
-  border: 2px solid $primary-light-blue;
-  background: $primary-white;
+  border: 2px solid colors.$primary-light-blue;
+  background: colors.$primary-white;
   width: 37.5625rem;
   padding: 2rem;
   flex-direction: column;
@@ -28,7 +30,7 @@ main section.methodo .methodo-list {
   }
 
   &__title {
-    color: $primary-light-blue;
+    color: colors.$primary-light-blue;
 
     /* Desktop/H4 */
     font-size: 1.5rem;
@@ -47,7 +49,7 @@ main section.methodo .methodo-list {
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    color: $primary-light-blue;
+    color: colors.$primary-light-blue;
 
     display: flex;
     width: 3.75rem;
@@ -59,7 +61,7 @@ main section.methodo .methodo-list {
     gap: 0.5rem;
 
     border-radius: 100%;
-    border: 2px solid $primary-light-blue;
+    border: 2px solid colors.$primary-light-blue;
     background: #fff;
 
     position: relative;
@@ -93,7 +95,7 @@ main section.methodo .methodo-list {
     span {
       color: var(--Primaire-White, #fffefd);
       border-radius: 2rem;
-      background: $primary-light-blue;
+      background: colors.$primary-light-blue;
     }
   }
 }

@@ -1,3 +1,5 @@
+@use "../../settings/mixins";
+
 main.project article {
   display: flex;
   flex-direction: column;
@@ -51,7 +53,7 @@ main.project article {
   }
 
   .subtitle {
-    @include typo-h2;
+    @include mixins.typo-h2;
   }
 
   .content__image {
@@ -73,6 +75,6 @@ main.project article {
   }
 
   .content__text div h3 {
-    @include typo-h3;
+    @include mixins.typo-h3;
   }
 }

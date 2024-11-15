@@ -1,3 +1,6 @@
+@use "../../../settings/colors";
+@use "../../../settings/mixins";
+
 main section.presentation {
   flex-direction: row;
   gap: 5rem;
@@ -47,7 +50,7 @@ main section.presentation {
     }
 
     .subtitle {
-      @include typo-h1;
+      @include mixins.typo-h1;
     }
   }
 
@@ -65,7 +68,7 @@ main section.presentation {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: $primary-orange;
+      background: colors.$primary-orange;
       border-radius: 1.5rem;
       z-index: 0;
 

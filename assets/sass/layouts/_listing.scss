@@ -1,3 +1,5 @@
+@use "../settings/mixins";
+
 .projects,
 .articles {
   padding: 5rem 5rem;
@@ -7,7 +9,7 @@
   }
 
   h1 {
-    @include typo-h2;
+    @include mixins.typo-h2;
   }
 
   &-list {

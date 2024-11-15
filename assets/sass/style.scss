@@ -1,36 +1,36 @@
 @charset "UTF-8";
 
 // 1. Settings
-@import "settings/assets-path";
-@import "settings/units";
-@import "settings/reset";
-@import "settings/colors";
-@import "settings/fonts";
-@import "settings/mixins";
+@use "settings/assets-path";
+@use "settings/units";
+@use "settings/reset";
+@use "settings/colors";
+@use "settings/fonts";
+@use "settings/mixins";
 
-@import "layouts/default";
-@import "layouts/home";
-@import "layouts/content-page";
-@import "layouts/listing";
+@use "layouts/default";
+@use "layouts/home";
+@use "layouts/content-page";
+@use "layouts/listing";
 
-@import "components/organisms/header";
-@import "components/organisms/footer";
-@import "components/organisms/article-article";
-@import "components/organisms/article-project";
-@import "components/organisms/section/section-home-about";
-@import "components/organisms/section/section-home-expertise";
-@import "components/organisms/section/section-home-listing";
-@import "components/organisms/section/section-home-methodo";
-@import "components/organisms/section/section-home-presentation";
+@use "components/organisms/header";
+@use "components/organisms/footer";
+@use "components/organisms/article-article";
+@use "components/organisms/article-project";
+@use "components/organisms/section/section-home-about";
+@use "components/organisms/section/section-home-expertise";
+@use "components/organisms/section/section-home-listing";
+@use "components/organisms/section/section-home-methodo";
+@use "components/organisms/section/section-home-presentation";
 
-@import "components/molecules/card";
-@import "components/molecules/content-block";
-@import "components/molecules/breadcrumb";
-@import "components/molecules/form";
-@import "components/molecules/image-shadow";
-@import "components/molecules/methodo-item";
-@import "components/molecules/tags-list";
+@use "components/molecules/card";
+@use "components/molecules/content-block";
+@use "components/molecules/breadcrumb";
+@use "components/molecules/form";
+@use "components/molecules/image-shadow";
+@use "components/molecules/methodo-item";
+@use "components/molecules/tags-list";
 
-@import "components/atoms/button";
-@import "components/atoms/highlight";
-@import "components/atoms/tag";
+@use "components/atoms/button";
+@use "components/atoms/highlight";
+@use "components/atoms/tag";

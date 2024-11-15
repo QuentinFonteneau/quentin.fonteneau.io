@@ -1,3 +1,6 @@
+@use "../../settings/colors";
+@use "../../settings/mixins";
+
 .content__image {
   gap: 2rem;
 
@@ -6,7 +9,7 @@
   }
 
   legend {
-    @include typo-small-body;
+    @include mixins.typo-small-body;
   }
 }
 
@@ -20,8 +23,8 @@
     gap: 2rem;
 
     h3 {
-      color: $primary-dark-blue;
-      @include typo-h4;
+      color: colors.$primary-dark-blue;
+      @include mixins.typo-h4;
     }
   }
 }
@@ -41,7 +44,7 @@
 
   h3 {
     padding-bottom: 2rem;
-    @include typo-h3;
+    @include mixins.typo-h3;
   }
 
   .step-items {
@@ -55,7 +58,7 @@
 
     .step-item {
       &__title {
-        @include typo-h4;
+        @include mixins.typo-h4;
 
         &::before {
           content: url(/img/build/asterisk.svg);
@@ -75,7 +78,7 @@
 
   blockquote {
     margin: 0;
-    @include typo-h2;
+    @include mixins.typo-h2;
 
     p {
       position: relative;
@@ -91,16 +94,16 @@
     }
 
     span {
-      @include typo-menu;
+      @include mixins.typo-menu;
 
       & {
-        color: $primary-dark-blue;
+        color: colors.$primary-dark-blue;
       }
 
       cite {
         margin-left: 2rem;
         font-style: normal;
-        color: $primary-light-blue;
+        color: colors.$primary-light-blue;
       }
     }
   }
@@ -111,11 +114,11 @@
 }
 
 .content__title {
-  @include typo-h3;
+  @include mixins.typo-h3;
 }
 
 .content__code pre {
-  @include typo-small-body;
+  @include mixins.typo-small-body;
   line-height: 1.5rem;
   border-radius: 1rem;
   padding: 1rem;

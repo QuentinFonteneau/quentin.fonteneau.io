@@ -1,3 +1,6 @@
+@use "../settings/colors";
+@use "../settings/mixins";
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -8,9 +11,9 @@ html {
     flex-direction: column;
     align-items: center;
 
-    background: $primary-white;
+    background: colors.$primary-white;
 
-    @include typo-big-body;
+    @include mixins.typo-big-body;
   }
 
   main {
