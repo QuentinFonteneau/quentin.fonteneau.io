@@ -1,1 +1,0 @@
-import{a as s,f as t,g as o,h as a,t as n,j as r,Q as l}from"./CCaENwkF.js";const c={class:"content__text"},i={key:0},m=s({__name:"BlockText",props:{title:{}},setup(_){return(e,p)=>(t(),o("section",c,[a("div",null,[e.title?(t(),o("h3",i,n(e.title),1)):r("",!0),l(e.$slots,"default")])]))}});export{m as default};
