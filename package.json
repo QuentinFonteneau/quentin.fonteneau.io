@@ -8,7 +8,7 @@
     "devtunnel": "nuxt dev --tunnel",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "deploy": "npm run process-images && nuxt generate && sh ./scripts/deploy.sh"
+    "deploy": "nuxt generate && sh ./scripts/deploy.sh"
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",

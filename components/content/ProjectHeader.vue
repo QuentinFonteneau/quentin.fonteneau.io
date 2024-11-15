@@ -2,7 +2,7 @@
   <section class="article__header">
     <div>
       <ul class="breadcrumb">
-        <li><a href="/projets">Mes projets</a></li>
+        <li><NuxtLink to="/projets">Mes projets</NuxtLink></li>
         <li>{{ post.title ?? "" }}</li>
       </ul>
       <div class="article_header_image shadow-top-left">
@@ -48,13 +48,13 @@
       <div class="article__header-description">
         <h1 class="subtitle">{{ post.title ?? "" }}</h1>
         <slot />
-        <a
+        <NuxtLink
           v-if="post.project_url"
           class="btn"
-          :href="post.project_url"
+          :to="post.project_url"
           target="_blank">
           Consulter le site
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </section>

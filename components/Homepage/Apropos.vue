@@ -1,9 +1,11 @@
 <template>
   <section class="about">
     <div class="about__image shadow-top-left">
-      <img
-        src="/img/build/quentin_02.webp"
-        loading="lazy" />
+      <NuxtImg
+        src="/img/build/quentin_dos.png"
+        sizes="xs:248px, sm:568px, md:698px, lg:431px, xl:572px, xxl:713px, 836px"
+        loading="lazy"
+        alt="Quentin Fonteneau de dos avec un casque sur les oreilles" />
     </div>
     <div class="about__text">
       <div class="header">
@@ -23,7 +25,7 @@
       </p>
       <NuxtLink
         class="btn"
-        href="/a-propos">
+        to="/a-propos">
         En savoir plus
       </NuxtLink>
     </div>

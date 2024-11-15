@@ -1,6 +1,6 @@
 <template>
   <section class="content__image">
-    <img
+    <NuxtImg
       :src="src"
       :alt="alt" />
     <legend v-if="legend">{{ legend }}</legend>

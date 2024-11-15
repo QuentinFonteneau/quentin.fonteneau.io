@@ -2,7 +2,7 @@
   <section class="article__header">
     <div>
       <ul class="breadcrumb">
-        <li><a href="/articles">Mes articles</a></li>
+        <li><NuxtLink to="/articles">Mes articles</NuxtLink></li>
         <li>{{ post.title ?? "" }}</li>
       </ul>
       <div class="article_header_image shadow-top-left">

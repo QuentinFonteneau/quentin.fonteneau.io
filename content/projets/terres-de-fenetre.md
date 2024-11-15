@@ -55,9 +55,10 @@ Nous avons également mis en place une synchronisation des différentes machines
 Quelques captures d'écran du site de Manitou :
 ::
 
+
 ::block-image
 ---
-src: /img/projects/manitou_nos-machines_low.webp
+src: /img/projects/content/manitou_nos-machines_low.webp
 alt: Capture d'écran de la page "Nos machines", listant les différentes catégories de machines en France.
 legend: Capture d'écran de la page "Nos machines", listant les différentes catégories de machines en France.
 ---
@@ -65,7 +66,7 @@ legend: Capture d'écran de la page "Nos machines", listant les différentes cat
 
 ::block-image
 ---
-src: /img/projects/manitou_store-locator.png
+src: /img/projects/content/manitou_store-locator.png
 alt: Capture d'écran du Store Locator du site de Manitou.
 legend: Capture d'écran du Store Locator du site de Manitou.
 ---

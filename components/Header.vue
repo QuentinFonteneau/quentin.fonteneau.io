@@ -1,11 +1,15 @@
 <template>
   <header>
     <div class="header">
-      <NuxtLink to="/">
-        <img
+      <NuxtLink
+        to="/"
+        aria-label="Retour à la page d'accueil">
+        <NuxtImg
           src="/img/build/logo.svg"
-          alt=""
-          class="logo" />
+          alt="Logo du site Quentin Fonteneau"
+          class="logo"
+          width="320"
+          height="46" />
       </NuxtLink>
 
       <!-- Menu pour les écrans de bureau -->
@@ -27,17 +31,23 @@
       <!-- Menu pour les écrans mobiles -->
       <div class="menu-mobile">
         <!-- Icône pour ouvrir le menu -->
-        <img
+        <NuxtImg
           v-if="!isMenuOpen"
           class="menu-icon__open active"
           src="/img/build/menu_open.svg"
-          @click="toggleMenu" />
+          @click="toggleMenu"
+          alt="Ouvrir le menu"
+          width="48"
+          height="32" />
         <!-- Icône pour fermer le menu -->
-        <img
+        <NuxtImg
           v-if="isMenuOpen"
           class="menu-icon__close active"
           src="/img/build/menu_close.svg"
-          @click="toggleMenu" />
+          @click="toggleMenu"
+          alt="Fermer le menu"
+          width="48"
+          height="32" />
         <!-- Navigation pour le menu mobile -->
         <nav :class="{ 'is-open': isMenuOpen }">
           <ul>

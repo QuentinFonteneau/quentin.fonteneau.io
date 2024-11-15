@@ -32,36 +32,18 @@
           <NuxtLink
             :to="projet._path"
             class="card">
-            <picture>
-              <!-- Image large pour les grands écrans -->
-              <source
-                :srcset="
-                  '/img/projects/thumbnail/' + projet.img + '_520x390.webp'
-                "
-                media="(min-width: 1200px)"
-                type="image/webp" />
-
-              <!-- Image moyenne pour les écrans de taille moyenne -->
-              <source
-                :srcset="
-                  '/img/projects/thumbnail/' + projet.img + '_520x390.webp'
-                "
-                media="(min-width: 768px)"
-                type="image/png" />
-
-              <!-- Image petite pour les petits écrans -->
-              <source
-                :srcset="
-                  '/img/projects/thumbnail/' + projet.img + '_520x390.webp'
-                "
-                media="(max-width: 767px)"
-                type="image/png" />
-
-              <img
-                src=""
-                loading="lazy" />
-            </picture>
-
+            <NuxtImg
+              :src="'/img/projects/thumbnail/' + projet.img + '_520x390.png'"
+              :alt="'Image illustrant le projet ' + projet.title"
+              sizes="(max-width: 320px) 272px, 
+            (max-width: 551px) 503px, 
+            (max-width: 640px) 260px, 
+            (max-width: 768px) 348px, 
+            (max-width: 927px) 372px, 
+            (max-width: 1024px) 358px, 
+            (max-width: 1536px) 443px, 
+            518px"
+              loading="lazy" />
             <div class="tag">
               <span>{{ projet.project_type }}</span>
             </div>
@@ -89,9 +71,7 @@ const filteredProjects = computed(() => {
   );
 });
 
-definePageMeta({
-  documentDriven: {
-    page: false, // Keep page fetching enabled
-  },
+useHead({
+  title: "Mes projets - Quentin Fonteneau",
 });
 </script>

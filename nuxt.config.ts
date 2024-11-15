@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   },
 
   content: {
-    documentDriven: true,
+    contentHead: false,
     markdown: {
       remarkPlugins: ["remark-reading-time"],
       rehypePlugins: [],
@@ -71,5 +71,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+  image: {},
   compatibilityDate: "2024-09-19",
 });

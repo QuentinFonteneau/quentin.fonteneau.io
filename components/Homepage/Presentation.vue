@@ -21,11 +21,19 @@
       </p>
     </div>
     <div class="presentation__image shadow-bottom-right">
-      <img
+      <NuxtImg
+        src="/img/build/quentin_face.png"
+        sizes="(max-width: 320px) 272px, (max-width: 551px) 503px, (max-width: 927px) 372px, (max-width: 1024px) 358px, (max-width: 1536px) 443px, 518px"
+        loading="lazy"
+        format="webp"
+        quality="90"
+        alt="Quentin Fonteneau installé à son bureau" />
+      <NuxtImg
         src="/img/build/quentin_01.webp"
-        loading="eager"
-        height="840"
-        width="730"
+        sizes="100vw sm:5vw md:400px"
+        loading="lazy"
+        format="webp"
+        quality="90"
         alt="Quentin Fonteneau installé à son bureau" />
     </div>
   </section>
