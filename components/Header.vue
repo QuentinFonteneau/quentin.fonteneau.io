@@ -59,13 +59,6 @@
             </li>
             <li>
               <NuxtLink
-                to="/articles"
-                @click="closeMenu"
-                >Articles</NuxtLink
-              >
-            </li>
-            <li>
-              <NuxtLink
                 to="/a-propos"
                 @click="closeMenu"
                 >À propos</NuxtLink

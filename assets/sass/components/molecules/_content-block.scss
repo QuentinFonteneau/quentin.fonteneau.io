@@ -43,14 +43,19 @@
   }
 
   h3 {
-    padding-bottom: 2rem;
     @include mixins.typo-h3;
+
+    & {
+      padding-bottom: 2rem;
+    }
   }
 
   .step-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 4rem 11rem;
+    & {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 4rem 11rem;
+    }
 
     @media screen and (max-width: 768px) {
       grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -77,8 +82,11 @@
   padding: 10rem 12rem;
 
   blockquote {
-    margin: 0;
     @include mixins.typo-h2;
+
+    & {
+      margin: 0;
+    }
 
     p {
       position: relative;
@@ -119,12 +127,15 @@
 
 .content__code pre {
   @include mixins.typo-small-body;
-  line-height: 1.5rem;
-  border-radius: 1rem;
-  padding: 1rem;
-  font-weight: 500;
-  background-color: #282c34;
-  overflow-x: scroll;
+
+  & {
+    line-height: 1.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: 500;
+    background-color: #282c34;
+    overflow-x: scroll;
+  }
 
   & code {
     counter-reset: step;
@@ -162,5 +173,7 @@ main.about .content__steps .step-items .step-item__subtitle {
   }
 
   @include mixins.typo-h3;
-  font-size: 1.5rem;
+  & {
+    font-size: 1.5rem;
+  }
 }

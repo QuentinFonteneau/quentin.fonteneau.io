@@ -2,7 +2,7 @@
   <main class="about">
     <article>
       <AboutIntro />
-      <AboutHobbies />
+      <!-- <AboutHobbies /> -->
       <AboutBackground />
       <AboutCallToContact />
       <AboutNextChallenges />

@@ -15,11 +15,46 @@ main.about {
   }
 
   .calltocontact {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    justify-content: center;
-    align-items: center;
-    background-color: colors.$secondary-lighten-62;
     @include mixins.typo-h2;
+    & {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      justify-content: center;
+      align-items: center;
+      background-color: colors.$secondary-lighten-62;
+    }
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .step-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .step-item__title {
+    @include mixins.typo-menu;
+  }
+
+  .step-item__subtitle {
+    @include mixins.typo-h4;
+
+    & {
+      color: colors.$primary-dark-blue;
+      line-height: 1.5rem;
+    }
+  }
+
+  .card img {
+    margin-top: 0.5rem;
+  }
+
+  .next-challenges a {
+    align-self: center;
   }
 }

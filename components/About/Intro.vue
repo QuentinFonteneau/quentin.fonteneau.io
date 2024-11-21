@@ -17,21 +17,28 @@
     </div>
     <div class="presentation__text">
       <div class="header">
-        <p class="subtitle">Rebonjour</p>
+        <p class="subtitle">Bonjour,</p>
       </div>
       <p>
-        Moi c’est Quentin ! Je suis développeur et je travaille dans le digital
-        depuis <span class="highlight">15 ans</span>.
+        Si vous voulez en savoir plus sur moi, vous êtes au bon endroit !
+        <br /><br />
+        Après un <span class="highlight">DUT informatique</span> suivi d'une
+        <span class="highlight">licence pro</span> j'ai commencé à travailler
+        dans le domaine du
+        <span class="highlight">développement web en 2012</span>. Vous trouverez
+        le détail de mon parcours un peu plus bas ! <br /><br />
+        <span class="highlight">Côté perso</span>, je ne vous cache pas que je
+        passe beaucoup de temps sur le PC pour
+        <span class="highlight"
+          >suivre les dernières évolutions et tester des logiciels ou des
+          solutions</span
+        >
+        qui pourraient m'être utile dans mon domaine.
         <br />
-        <br />
-        Maîtrisant les technologies
-        <span class="highlight">front-end et back-end</span>, je suis à l'écoute
-        de vos besoins et de vos exigences, et je suis toujours prêt à vous
-        proposer des <span class="highlight">solutions adaptées</span> à votre
-        projet.
-        <br />
-        <br />
-        La suite, c’est juste en dessous !
+        Ceci dit, je ne passe pas non plus toute la journée derrière l'écran !
+        Je pratique pas mal de sport (<span class="highlight"
+          >badminton, course à pied, cyclisme sur route...</span
+        >) et lorsque le beau temps arrive, je bricole dehors.
       </p>
     </div>
   </section>
