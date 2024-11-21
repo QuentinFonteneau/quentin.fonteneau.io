@@ -1,1 +1,0 @@
-import{u as t}from"./DzBikc5W.js";import{g as e,f as n}from"./CMTQgcKU.js";const u={__name:"contact",setup(a){return t({title:"Contact - Quentin Fonteneau"}),(o,c)=>(n(),e("main",null,"Contact"))}};export{u as default};

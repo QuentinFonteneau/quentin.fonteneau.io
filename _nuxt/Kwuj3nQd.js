@@ -1,1 +1,0 @@
-import{u as e}from"./DzBikc5W.js";import{g as o,f as t}from"./CMTQgcKU.js";const u={__name:"a-propos",setup(r){return e({title:"À propos - Quentin Fonteneau"}),(a,n)=>(t(),o("main",null,"A propos"))}};export{u as default};
