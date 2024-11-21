@@ -14,14 +14,8 @@
           <NuxtImg
             :src="'/img/articles/thumbnail/' + article.img + '_520x390.webp'"
             :alt="'Image illustrant l\'article ' + article.title"
-            sizes="(max-width: 320px) 272px, 
-            (max-width: 551px) 503px, 
-            (max-width: 640px) 260px, 
-            (max-width: 768px) 348px, 
-            (max-width: 927px) 372px, 
-            (max-width: 1024px) 358px, 
-            (max-width: 1536px) 443px, 
-            518px"
+            sizes="(max-width: 320px) 272px, (max-width: 551px) 503px, (max-width: 640px) 260px, (max-width: 768px) 348px, (max-width: 927px) 372px, (max-width: 1024px) 358px, (max-width: 1536px) 443px, 518px"
+            quality="90"
             loading="lazy" />
           <div class="tag">
             <span>{{ article.article_type }}</span>

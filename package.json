@@ -2,7 +2,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "process-images": "node ./scripts/process-images.js",
+    "process-images": "/bin/bash scripts/pngtowebp.sh",
+    "process-images-v2": "node scripts/process-images-v2.js",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "devtunnel": "nuxt dev --tunnel",
@@ -14,6 +15,7 @@
     "@nuxt/content": "^2.13.4",
     "@nuxt/image": "^1.8.0",
     "@nuxthq/studio": "^2.2.1",
+    "dotenv": "^16.4.5",
     "nuxt": "^3.13.0",
     "nuxt-vite": "^0.3.5",
     "reading-time": "^1.5.0",

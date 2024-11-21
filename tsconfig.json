@@ -12,5 +12,5 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["**/*.ts", "**/*.d.ts", "**/*.vue", "scripts/process-images.js"]
+  "include": ["**/*.ts", "**/*.d.ts", "**/*.vue"]
 }

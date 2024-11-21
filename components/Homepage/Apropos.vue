@@ -2,8 +2,9 @@
   <section class="about">
     <div class="about__image shadow-top-left">
       <NuxtImg
-        src="/img/build/quentin_dos.png"
+        src="/img/build/quentin_dos.webp"
         sizes="xs:248px, sm:568px, md:698px, lg:431px, xl:572px, xxl:713px, 836px"
+        quality="90"
         loading="lazy"
         alt="Quentin Fonteneau de dos avec un casque sur les oreilles" />
     </div>
@@ -13,15 +14,19 @@
         <p class="subtitle">À propos de moi</p>
       </div>
       <p>
-        Moi c’est Quentin ! Je suis développeur et je travaille dans le digital
-        depuis <span class="highlight">15 ans</span>.
-        <br />
-        <br />
-        Maîtrisant les technologies
-        <span class="highlight">front-end et back-end</span>, je suis à l'écoute
-        de vos besoins et de vos exigences, et je suis toujours prêt à vous
-        proposer des <span class="highlight">solutions adaptées</span> à votre
-        projet.
+        Quand je ne suis pas derrière un écran à concevoir des solutions web
+        performantes, je suis souvent en mouvement.
+        <span class="highlight">Passionné de sport</span>, j’aime me dépasser en
+        pratiquant le cyclisme, la course à pied ou encore du badminton.<br />
+        En dehors du digital et de l’effort physique, je trouve aussi mon
+        équilibre dans
+        <span class="highlight">la construction et le bricolage</span>. J’ai un
+        réel plaisir à concevoir des projets en bois !<br /><br />
+        <span class="highlight">Curieux et rigoureux</span>, j’aime explorer et
+        étudier de nouvelles solutions web pour rester à la pointe de mon
+        métier. <span class="highlight">Ponctuel, sérieux et persévérant</span>,
+        je m’investis pleinement dans tout ce que j’entreprends, que ce soit
+        dans ma vie professionnelle ou personnelle.
       </p>
       <NuxtLink
         class="btn"

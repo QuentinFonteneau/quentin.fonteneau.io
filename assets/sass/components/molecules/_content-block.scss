@@ -147,3 +147,20 @@
     }
   }
 }
+
+main.about .content__steps .step-items .step-item__title {
+  &::before {
+    content: none;
+  }
+
+  @include mixins.typo-subtitle;
+}
+
+main.about .content__steps .step-items .step-item__subtitle {
+  &::before {
+    content: none;
+  }
+
+  @include mixins.typo-h3;
+  font-size: 1.5rem;
+}

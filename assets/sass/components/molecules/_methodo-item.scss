@@ -1,89 +1,93 @@
 @use "../../settings/colors";
 
 .methodo-item {
-    border-radius: 1rem;
-    border: 2px solid colors.$primary-light-blue;
-    background: colors.$primary-white;
-    width: 37.5625rem; 
-    padding: 2rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem; 
-    flex-wrap: wrap;
-    height: fit-content;
-    display: flex;
+  border-radius: 1rem;
+  border: 2px solid colors.$primary-light-blue;
+  background: colors.$primary-white;
+  width: 37.5625rem;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  height: fit-content;
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    width: 85%;
+  }
+
+  &__title {
+    color: colors.$primary-light-blue;
+
+    /* Desktop/H4 */
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+    margin-top: -3.75rem;
+  }
+
+  &__text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: normal;
 
     @media screen and (max-width: 768px) {
-        width: 85%; 
+      font-size: 1rem;
+    }
+  }
+
+  & span {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    color: colors.$primary-light-blue;
+
+    display: flex;
+    width: 3.75rem;
+    height: 3.75rem;
+    padding: 0.5rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    border-radius: 100%;
+    border: 2px solid colors.$primary-light-blue;
+    background: #fff;
+
+    position: relative;
+    right: 3.875rem;
+    top: -3.875rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:nth-child(1) {
+      transform: rotate(-1.5deg);
     }
 
-    &__title {
-        color: colors.$primary-light-blue;
-
-        /* Desktop/H4 */
-        font-size: 1.5rem;
-        font-weight: 800;
-        line-height: 2rem;
-        margin-top: -3.75rem;
+    &:nth-child(2) {
+      transform: rotate(2deg);
+      margin-top: 5rem;
     }
 
-    &__text {
-        font-size: 1.25rem;
-        font-weight: 600;
-        line-height: normal; 
+    &:nth-child(3) {
+      transform: rotate(2deg);
+      margin-top: 2.5rem;
     }
 
-    & span {
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 700; 
-        color: colors.$primary-light-blue; 
-
-        display: flex;
-        width: 3.75rem;
-        height: 3.75rem;
-        padding: 0.5rem 1.5rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-
-        border-radius: 100%;
-        border: 2px solid colors.$primary-light-blue;
-        background: #FFF; 
-
-        position: relative;
-        right: 3.875rem; 
-        top: -3.875rem; 
+    &:nth-child(4) {
+      transform: rotate(-1.5deg);
+      margin-top: 7.5rem;
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        &:nth-child(1) {
-            transform: rotate(-1.5deg);
-        }
-
-        &:nth-child(2) {
-            transform: rotate(2deg);
-            margin-top: 5rem;
-        }
-
-        &:nth-child(3) {
-            transform: rotate(2deg);
-            margin-top: 2.5rem;
-        }
-
-        &:nth-child(4) {
-            transform: rotate(-1.5deg);
-            margin-top: 7.5rem;
-        }
+  &:first-of-type,
+  &:last-of-type {
+    span {
+      color: var(--Primaire-White, #fffefd);
+      border-radius: 2rem;
+      background: colors.$primary-light-blue;
     }
-
-    &:first-of-type,&:last-of-type {
-
-        span {
-            color: var(--Primaire-White, #FFFEFD); 
-            border-radius: 2rem;
-            background: colors.$primary-light-blue;
-        }
-    }
+  }
 }

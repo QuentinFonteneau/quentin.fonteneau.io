@@ -49,8 +49,7 @@ main section.about {
 
     @media screen and (max-width: 768px) {
       display: flex;
-      justify-content: flex-end;
-      width: fit-content;
+      width: 100%;
     }
 
     &::after {

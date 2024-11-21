@@ -21,6 +21,11 @@ export default defineNuxtConfig({
         },
       },
     },
+    build: {
+      rollupOptions: {
+        external: ["sharp"],
+      },
+    },
   },
   app: {
     rootTag: "body",
@@ -71,6 +76,21 @@ export default defineNuxtConfig({
       ],
     },
   },
-  image: {},
+  image: {
+    provider: "ipx", // ou un autre provider approprié
+    presets: {
+      default: {
+        format: "webp",
+      },
+    },
+  },
+  runtimeConfig: {
+    // Variables accessibles côté client
+    public: {
+      apiUrl: process.env.API_URL,
+      basicAuthUsername: process.env.BASIC_AUTH_USERNAME,
+      basicAuthPassword: process.env.BASIC_AUTH_PASSWORD,
+    },
+  },
   compatibilityDate: "2024-09-19",
 });

@@ -73,5 +73,12 @@ const filteredProjects = computed(() => {
 
 useHead({
   title: "Mes projets - Quentin Fonteneau",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Explorez mes réalisations en tant que développeur freelance : projets web sur mesure en PHP et JavaScript. Découvrez mon savoir-faire au service de vos idées.",
+    },
+  ],
 });
 </script>
