@@ -2,7 +2,7 @@
   <main class="contact">
     <section>
       <div class="image shadow-top-right">
-        <img src="/img/build/nantes.webp" />
+        <img src="/img/build/maison.webp" />
       </div>
     </section>
     <section>
@@ -43,6 +43,7 @@
           <textarea
             v-model="form.message"
             id="message"
+            rows="5"
             placeholder="Décrivez votre projet"></textarea>
           <p
             v-if="errors.message"

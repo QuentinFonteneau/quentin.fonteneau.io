@@ -5,10 +5,14 @@ main.contact {
   display: flex;
   flex-direction: row;
 
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+  }
+
   img {
     aspect-ratio: 3/4;
     object-fit: cover;
-    max-width: 500px;
+    max-width: 610px;
   }
 
   .title {
@@ -28,6 +32,19 @@ main.contact {
     display: flex;
     flex-direction: column;
     width: 50%;
+
+    @media screen and (max-width: 1200px) {
+      width: 80%;
+
+      &:first-child {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 2.5rem;
+    }
   }
 
   .image {
