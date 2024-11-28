@@ -49,12 +49,8 @@ main.contact {
 
   .image {
     align-self: center;
-    width: 75%;
+    width: 90%;
     position: relative;
-    @media screen and (max-width: 768px) {
-      display: flex;
-      width: 100%;
-    }
 
     &::after {
       content: "";
@@ -64,10 +60,6 @@ main.contact {
       background: colors.$primary-orange;
       border-radius: 1.5rem;
       z-index: 0;
-
-      @media screen and (max-width: 768px) {
-        width: calc(100% - 1.5rem);
-      }
     }
 
     & img {
@@ -80,10 +72,6 @@ main.contact {
       object-fit: cover;
       object-position: top;
       z-index: 1;
-
-      @media screen and (max-width: 768px) {
-        width: calc(100% - 1.5rem);
-      }
     }
   }
 
