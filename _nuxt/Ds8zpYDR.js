@@ -1,0 +1,1 @@
+import{m as o,f as t,g as c,N as s}from"./Dl2jSDQ2.js";const n={},r={class:"content__code"};function a(e,_){return t(),c("section",r,[s(e.$slots,"default")])}const d=o(n,[["render",a]]);export{d as default};
