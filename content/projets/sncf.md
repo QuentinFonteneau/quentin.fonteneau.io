@@ -1,6 +1,6 @@
 ---
 title: "SNCF"
-img: "manitou_homepage"
+img: "sncf_homepage"
 project_type: "Agence" # Freelance, En agence, Projet perso
 project_skills: ["Drupal", "Multilingue"]
 project_url: "https://manitou.com/fr-FR"

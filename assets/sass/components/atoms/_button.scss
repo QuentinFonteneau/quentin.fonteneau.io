@@ -40,4 +40,9 @@
     transition: background 0.1s linear;
     background: var(--Primaire-Bleu-primaire, #3a47d0);
   }
+
+  &.external:hover::after {
+    background-color: #fff;
+    transition: background 0.1s linear;
+  }
 }

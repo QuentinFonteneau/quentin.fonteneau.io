@@ -25,7 +25,7 @@ main.contact {
 
   label {
     @include mixins.typo-small-body;
-    color: colors.$secondary-lighten-12;
+    color: colors.$primary-light-blue;
   }
 
   section {
@@ -82,7 +82,7 @@ main.contact {
 
     p {
       @include mixins.typo-small-body;
-      color: colors.$secondary-lighten-0;
+      color: colors.$primary-light-blue;
     }
 
     .row {

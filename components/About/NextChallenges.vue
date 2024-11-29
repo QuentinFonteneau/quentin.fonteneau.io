@@ -37,8 +37,9 @@
     </div>
 
     <NuxtLink
-      to="/contact"
-      class="btn"
+      to="https://www.strava.com/athletes/10466645"
+      class="btn external"
+      target="_blank"
       >Suivre mes challenges sur Strava</NuxtLink
     >
   </section>

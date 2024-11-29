@@ -2,7 +2,10 @@
   <main class="contact">
     <section>
       <div class="image shadow-top-right">
-        <img src="/img/build/maison.webp" />
+        <NuxtImg
+          src="/img/build/maison.webp"
+          alt="Photo d'un couché de soleil depuis mon jardin"
+          loading="lazy" />
       </div>
     </section>
     <section>
