@@ -4,6 +4,7 @@ img: "aeroportnantes_homepage"
 project_type: "Agence" # Freelance, En agence, Projet perso
 project_skills: ["Drupal", "Multilingue", "Fort traffic"]
 project_url: "https://www.nantes.aeroport.fr/fr"
+created_at: "2023-05-01"
 ---
 
 ::project-header

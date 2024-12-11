@@ -17,7 +17,7 @@
             quality="90"
             loading="lazy" />
           <div class="tag">
-            <span>En agence</span>
+            <span>{{ projet.project_type }}</span>
           </div>
           <span class="link">{{ projet.title }}</span>
         </NuxtLink>

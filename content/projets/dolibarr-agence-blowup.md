@@ -4,7 +4,7 @@ img: "dolibarr-agenceblowup"
 project_type: "Freelance" # Freelance, En agence, Projet perso
 project_skills: ["Gestion de serveur", "Docker"]
 project_url: ""
-draft: false
+created_at: "2024-10-01"
 ---
 
 ::project-header

@@ -4,6 +4,7 @@ img: "ico_homepage"
 project_type: "Agence" # Freelance, En agence, Projet perso
 project_skills: ["Drupal", "Site public", "Intranet"]
 project_url: "https://www.institut-cancerologie-ouest.com/"
+created_at: "2021-03-01"
 ---
 
 ::project-header

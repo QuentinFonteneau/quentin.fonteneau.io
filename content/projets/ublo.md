@@ -4,6 +4,7 @@ img: "ublo_homepage"
 project_type: "Agence" # Freelance, En agence, Projet perso
 project_skills: ["Symfony", "Sonata", "NuxtJS"]
 project_url: ""
+created_at: "2024-07-01"
 ---
 
 ::project-header

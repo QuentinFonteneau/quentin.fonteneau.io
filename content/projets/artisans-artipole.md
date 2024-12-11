@@ -4,6 +4,7 @@ img: "artipole_homepage"
 project_type: "Agence" # Freelance, En agence, Projet perso
 project_skills: ["Drupal", "Marketing automation"]
 project_url: "https://www.artisansartipole.fr/"
+created_at: "2024-06-01"
 ---
 
 ::project-header
