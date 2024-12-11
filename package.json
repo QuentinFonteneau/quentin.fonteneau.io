@@ -9,7 +9,8 @@
     "devtunnel": "nuxt dev --tunnel",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "deploy": "nuxt generate && sh ./scripts/deploy.sh"
+    "deploy:prod": "nuxt generate && sh ./scripts/deploy.sh prod",
+    "deploy:preprod": "nuxt generate && sh ./scripts/deploy.sh preprod"
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",
