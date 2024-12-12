@@ -52,7 +52,7 @@
 const projectType = ref("all");
 
 const { data: allProjects } = await useAsyncData("all-projects", () =>
-  queryContent("projets").find()
+  queryContent("projets").sort({ created_at: -1 }).find()
 );
 
 const filteredProjects = computed(() => {

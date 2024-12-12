@@ -93,7 +93,6 @@ const apiUrl = config.public.apiUrl;
 const authHeader = `Basic ${btoa(`${username}:${password}`)}`;
 
 const validateForm = () => {
-  console.info(form.value.message.trim().length);
   errors.value = {
     name:
       form.value.name.trim() === ""
@@ -127,6 +126,7 @@ const submitForm = async () => {
   }
 
   try {
+    console.info(JSON.stringify(form.value));
     const response = await fetch(apiUrl, {
       method: "POST",
       headers: {

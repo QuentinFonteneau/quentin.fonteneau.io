@@ -21,10 +21,9 @@
           height="40" />
       </div>
       <div class="footer__second">
-        <ul>
+        <ul style="display: none !important">
           <li><NuxtLink to="/">Mentions légales</NuxtLink></li>
           <li><NuxtLink to="/">Plan du site</NuxtLink></li>
-          <li><NuxtLink to="/">Gestion des cookies</NuxtLink></li>
         </ul>
         <span class="copyright">© Quentin Fonteneau - 2024</span>
       </div>
