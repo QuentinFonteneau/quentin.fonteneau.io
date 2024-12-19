@@ -1,0 +1,1 @@
+import{a as s,f as a,g as n,h as o,M as l,i as r,t}from"./CKSXDZdU.js";const c={class:"content__blockquote"},_=s({__name:"BlockTestimony",props:{author:{},role:{}},setup(u){return(e,p)=>(a(),n("section",c,[o("blockquote",null,[l(e.$slots,"default"),o("span",null,[r(t(e.author)+" ",1),o("cite",null,t(e.role),1)])])]))}});export{_ as default};

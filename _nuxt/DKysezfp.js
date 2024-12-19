@@ -1,0 +1,1 @@
+import{m as t,f as o,g as s,M as c}from"./CKSXDZdU.js";const n={},r={class:"content__title"};function a(e,l){return o(),s("section",r,[c(e.$slots,"default")])}const f=t(n,[["render",a]]);export{f as default};

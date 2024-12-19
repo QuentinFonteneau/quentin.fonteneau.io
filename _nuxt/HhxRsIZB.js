@@ -1,0 +1,1 @@
+import{a as s,f as o,g as a,h as e,t as i,M as _}from"./CKSXDZdU.js";const l={class:"step-item"},n={class:"step-item__title"},c={class:"step-item__text"},m=s({__name:"BlockStepItem",props:{title:{}},setup(p){return(t,r)=>(o(),a("div",l,[e("div",n,i(t.title),1),e("div",c,[_(t.$slots,"default")])]))}});export{m as default};
